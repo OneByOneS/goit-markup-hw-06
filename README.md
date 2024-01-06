@@ -1,1 +1,1 @@
-https://onebyones.github.io/goit-markup-hw-05/
+https://onebyones.github.io/goit-markup-hw-06/

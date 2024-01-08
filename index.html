@@ -26,7 +26,11 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
           <a class="header-link-logo" href="./index.html"
             >Web<span class="header-link-logo-part">Studio</span></a
           >
-
+          <button class="menu-btn" type="button" aria-label="Open menu button">
+            <svg class="menu-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu-btn"></use>
+            </svg>
+          </button>
           <ul class="header-list">
             <li class="header-item">
               <a class="header-link active" href="#home">Studio</a>
@@ -58,7 +62,7 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
       </div>
     </header>
     <main>
-      <section class="hero-section">
+      <section class="hero-section hiden">
         <div class="hero-section-container container">
           <h1 class="hero-section-text">
             Effective Solutions for Your Business
@@ -69,7 +73,7 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
         </div>
       </section>
       <!-- About us -->
-      <section class="about-us-section">
+      <section class="about-us-section hiden">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="about-us-list">
@@ -125,7 +129,7 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
         </div>
       </section>
       <!-- Team -->
-      <section class="team-section">
+      <section class="team-section hiden">
         <div class="container">
           <h2 class="team-section-title">Our Team</h2>
           <ul class="team-section-list">
@@ -329,7 +333,7 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
         </div>
       </section>
       <!-- Portfolio -->
-      <section class="portfolio-section">
+      <section class="portfolio-section hiden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-section-list">
@@ -446,7 +450,7 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer hiden">
       <div class="footer-container container">
         <div class="footer-subject">
           <a class="header-link-logo" href="./index.html"
@@ -520,7 +524,7 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
 
     <!-- Modal window -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop (is-open)">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -607,6 +611,70 @@ https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.m
           <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu">
+      <button class="menu-btn" type="button" aria-label="">
+        <svg class="menu-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link curent" href="">Studio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-contact accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-social">
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-list-icon" href="https://instagram.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-list-icon" href="https://twitter.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-list-icon" href="https://facebook.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-social-list-item">
+          <a class="mobile-menu-social-list-icon" href="https://linkedin.com/">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
